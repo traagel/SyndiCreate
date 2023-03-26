@@ -116,6 +116,46 @@ header button {
 /* Testimonials */
 #testimonials {
     padding: 2rem;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+#testimonials h2 {
+    margin-bottom: 1rem;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.testimonial {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 1.5rem;
+    width: 300px;
+    margin: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.testimonial blockquote {
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+    text-align: left;
+}
+
+.testimonial p {
+    font-size: 1rem;
+    text-align: right;
+    margin: 0;
+    font-weight: bold;
 }
 
 /* Pricing */
