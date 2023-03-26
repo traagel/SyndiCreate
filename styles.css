@@ -40,21 +40,73 @@ nav ul li a {
 }
 
 /* Header */
-header {
-    text-align: center;
-    padding: 4rem;
-    background-image: url('header-background.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
+#header {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+	margin-bottom: -4rem;
 }
 
-header button {
-    background-color: #333;
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-text {
+    max-width: 50%;
+    padding-right: 2rem;
+    box-sizing: border-box;
+}
+
+.header-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.header-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.get-started {
+    background-color: #ff9f00; /* Change to a color that matches your brand identity */
     color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.get-started:hover {
+    background-color: #ff7f00; /* Change to a slightly darker color for hover effect */
+}
+
+.header-image {
+    max-width: 50%;
+}
+
+.header-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .header-text {
+        max-width: 100%;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .header-image {
+        max-width: 100%;
+        margin-top: 2rem;
+    }
 }
 
 /* Features */
@@ -62,6 +114,8 @@ header button {
     display: flex;
     justify-content: space-around;
     padding: 2rem;
+	background-color: #f5f5f5;
+	text-align: center;
 }
 
 #features img {
@@ -74,10 +128,9 @@ header button {
 }
 
 /* How it works */
-/* How it works */
 #how-it-works {
     padding: 2rem;
-    background-color: #f5f5f5;
+    background-color: #fff;
     text-align: center;
 }
 
@@ -116,7 +169,7 @@ header button {
 /* Testimonials */
 #testimonials {
     padding: 2rem;
-    background-color: #f0f0f0;
+    background-color: #f5f5f5;
     text-align: center;
 }
 
@@ -149,6 +202,7 @@ header button {
     line-height: 1.5;
     margin: 0 0 1rem 0;
     text-align: left;
+	color: #333;
 }
 
 .testimonial p {
@@ -156,6 +210,7 @@ header button {
     text-align: right;
     margin: 0;
     font-weight: bold;
+	color: #333;
 }
 
 /* Pricing */
@@ -163,18 +218,60 @@ header button {
     padding: 2rem;
 }
 
-/* Call-to-action */
+/* Call to Action */
 #cta {
-    text-align: center;
     padding: 2rem;
+    background-color: #f5f5f5; /* Change to a color that matches your brand identity */
+    color: #333; /* Change to a color that contrasts the background for better readability */
+    text-align: center;
 }
 
-#cta button {
-    background-color: #333;
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.cta-content h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.cta-content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.cta-content li {
+    padding-left: 1rem;
+    text-indent: -1rem;
+    margin-bottom: 0.5rem;
+}
+
+.cta-content li:before {
+    content: '✓';
+    padding-right: 0.5rem;
+}
+
+.cta-button {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.cta-button button {
+    background-color: #ff9f00; /* Change to a color that matches your brand identity */
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 24px;
+    font-size: 1.1rem;
     cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 3px;
+}
+
+.cta-button button:hover {
+    background-color: #ff7f00; /* Change to a slightly darker color for hover effect */
 }
 
 /* Footer */
